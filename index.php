@@ -1,6 +1,6 @@
 <?php
    session_start();
-   require 'dbconfig/config.php'
+   require 'dbconfig/config.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -124,7 +124,7 @@ if(isset($_POST['slogin']))
 	if(mysqli_num_rows($query_run)>0)
 	{
 		$_SESSION['sroll_no']= $srollno;
-		header('location:home.php');
+		header('location:stddash.php');
 	
 	}
 	
